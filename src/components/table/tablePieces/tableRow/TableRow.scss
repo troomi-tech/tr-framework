@@ -1,0 +1,18 @@
+@import '../../../../styles/themes/themes.scss';
+
+.rsTableRow {
+	cursor: default;
+	background-color: theme-var($primaryBackgroundColor);
+	box-sizing: border-box;
+	min-height: 50px;
+	max-height: 50px;
+
+	&.clickable {
+		transition: all 200ms ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			filter: brightness(0.9);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@import 'src/styles/themes/themes.scss';
+
+.rsTooltip {
+	&.outlined {
+		background-color: theme-var($primaryBackgroundColor);
+		outline: 4px solid black;
+		color: black;
+	}
+	&.standard {
+		background-color: theme-var($primaryOrangeColor);
+		color: white;
+	}
+	&.filled {
+		background-color: theme-var($primaryBlueColor);
+		color: white;
+	}
+}

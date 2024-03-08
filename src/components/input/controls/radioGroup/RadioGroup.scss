@@ -1,0 +1,59 @@
+@import 'src/styles/themes/themes';
+
+.rsRadioGroup {
+	color: theme-var($primaryTextColor);
+	font-family: 'Nunito', sans-serif;
+	flex-direction: column;
+    flex-wrap: wrap;
+	display: flex;
+	gap: 8px;
+
+	.labelRadio {
+        display: inline-flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+		font-size: 14px;
+		font-weight: 600;
+
+		.radioOption {
+            cursor: pointer;
+            display: inline-block;
+			border: none;
+            appearance: none;
+			outline: none;
+            margin: 0px;
+
+            &:not([class*='icon-']) {
+                width: 16px;
+                height: 16px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: currentColor;
+                position: relative;
+                border-radius: 50%;
+                
+                &.selected::after {
+                    content: '';
+                    transform-origin: center center;
+                    background-color: currentColor;
+                    border-radius: inherit;
+                    position: absolute;
+                    color: inherit;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0px;
+                    scale: 0.9;
+                    left: 0;
+                    top: 0;
+                }
+            }
+		}
+
+        .radioLabel {
+            display: inline-block;
+            cursor: pointer;
+        }
+	}
+}

@@ -1,0 +1,24 @@
+@import '../../styles/themes/themes.scss';
+
+.rsChip {
+	&.outlined {
+		border: 4px solid theme-var($primaryOrangeColor);
+		background-color: transparent;
+	}
+	&.standard {
+		background-color: theme-var($primaryOrangeColor);
+		color: theme-var($white);
+	}
+	&.error {
+		background-color: theme-var($errorTextColor);
+		color: theme-var($white);
+	}
+	&.success {
+		background-color: theme-var($successMainColor);
+		color: theme-var($white);
+	}
+	&.warning {
+		background-color: theme-var($warningMainColor);
+		color: theme-var($white);
+	}
+}

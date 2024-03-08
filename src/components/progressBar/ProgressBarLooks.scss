@@ -1,0 +1,21 @@
+@import 'src/styles/themes/themes';
+
+.rsProgressBar {
+	&.primary {
+		background-color: theme-var($lightGray);
+
+		.rsProgressBarInner {
+			background-color: theme-var($primaryOrangeColor);
+			color: theme-var($white);
+		}
+	}
+
+	&.secondary {
+		background-color: theme-var($lightGray);
+
+		.rsProgressBarInner {
+			background-color: theme-var($primaryPurpleColor);
+			color: theme-var($white);
+		}
+	}
+}

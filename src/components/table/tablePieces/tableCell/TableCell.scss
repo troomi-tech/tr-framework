@@ -1,0 +1,38 @@
+.rsTableCell {
+	white-space: nowrap;
+	width: auto;
+	margin: 0 5px;
+	display: table-cell;
+	flex-direction: row;
+	align-content: flex-start;
+	padding: 10px 8px;
+
+	&.centerAlign {
+		text-align: center;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	&.inheritClass {
+		text-align: inherit;
+		align-items: flex-start;
+		justify-content: inherit;
+	}
+
+	&.justifyClass {
+		text-align: justify;
+		align-items: flex-start;
+	}
+
+	&.leftAlign {
+		text-align: left;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	&.rightAlign {
+		text-align: right;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+}

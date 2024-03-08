@@ -1,0 +1,41 @@
+.rsSelect {
+	width: 100%;
+	margin: 0 auto;
+	font-family: inherit;
+
+
+	[class*='control'] {
+		cursor: pointer;
+		min-width: fit-content;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: inherit;
+
+	}
+
+	[class*='ValueContainer'] {
+		min-width: 80px;
+		height: inherit;
+	}
+
+	[class*='option'] {
+		cursor: pointer;
+	}
+
+	[class*='container'] {
+		height: inherit;
+	}
+
+	// [class*='menu'] {}
+
+	// [class*='placeholder'] {}
+
+	// [class*='input'] {}
+
+	// [class*='IndicatorsContainer'] {}
+
+	// [class*='indicatorSeparator'] {}
+
+	// [class*='indicatorContainer'] {}
+}

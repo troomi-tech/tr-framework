@@ -1,0 +1,8 @@
+@import 'src/styles/themes/themes';
+
+.rsInput {
+    color: theme-var($primaryTextColor);
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    border: none;
+}

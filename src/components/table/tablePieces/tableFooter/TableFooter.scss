@@ -1,0 +1,15 @@
+.rsTableFooter {
+	display: table-footer-group;
+
+	width: 100%;
+
+	padding: 20px 0;
+
+	tr {
+		vertical-align: middle;
+
+		th {
+			padding: 40px 0;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@import 'src/styles/themes/themes';
+
+.rsToastMessage {
+	.rsLabel {
+		color: white;
+	}
+}
+
+.Toastify {
+	.Toastify__close-button {
+		color: #878a8e;
+		align-self: center;
+	}
+
+	.rsToastMessage {
+		.rsLabel {
+			color: black;
+		}
+
+		&.success {
+			.rsIcon {
+				color: theme-var($white);
+				background-color: theme-var($successMainColor);
+				border-radius: 50%;
+				padding: 5px;
+			}
+		}
+
+		&.error {
+			.rsIcon {
+				color: theme-var($errorMainColor);
+			}
+		}
+
+		&.info {
+			.rsIcon {
+				color: theme-var($infoMainColor);
+			}
+		}
+
+		&.warning {
+			.rsIcon {
+				color: theme-var($warningMainColor);
+			}
+		}
+	}
+
+	.Toastify__toast--error {
+		background: theme-var($errorBackgroundColor);
+	}
+
+	.Toastify__toast--success {
+		background: theme-var($successBackgroundColor);
+	}
+
+	.Toastify__toast--info {
+		background: theme-var($infoBackgroundColor);
+	}
+
+	.Toastify__toast--warning {
+		background: theme-var($warningBackgroundColor);
+	}
+
+	.Toastify__progress-bar {
+		&.Toastify__progress-bar--error {
+			background-color: theme-var($errorMainColor);
+		}
+
+		&.Toastify__progress-bar--success {
+			background-color: theme-var($successMainColor);
+		}
+
+		&.Toastify__progress-bar--info {
+			background-color: theme-var($infoMainColor);
+		}
+
+		&.Toastify__progress-bar--warning {
+			background-color: theme-var($warningMainColor);
+		}
+	}
+}

@@ -1,0 +1,48 @@
+@import '../../styles/themes/themes.scss';
+
+.rsButton {
+	cursor: pointer;
+	transition: all 300ms;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	border-radius: 24px;
+
+	&.wrappingTooltip {
+		overflow: visible;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+
+	>.ripple {
+		position: absolute;
+		background-color: #fff;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		border-radius: 50%;
+		animation: ripples 0.6s linear infinite;
+	}
+
+	@keyframes ripples {
+		0% {
+			width: 0;
+			height: 0;
+			opacity: 0.5;
+		}
+
+		100% {
+			width: 500px;
+			height: 500px;
+			opacity: 0;
+		}
+	}
+}

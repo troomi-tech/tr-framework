@@ -1,0 +1,9 @@
+@import 'src/styles/themes/themes';
+
+.rsNumericInput {
+    width: 100%;
+    color: theme-var($primaryTextColor);
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    border: none;
+}

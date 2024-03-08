@@ -1,0 +1,15 @@
+@import url('./fonts/Nunito/font.scss');
+@import './themes/themes.scss';
+
+html {
+	font-family: 'Nunito', sans-serif;
+}
+
+// Spread default theme into App class
+body {
+	@include spread-map($defaultTheme);
+}
+
+* {
+	box-sizing: border-box;
+}

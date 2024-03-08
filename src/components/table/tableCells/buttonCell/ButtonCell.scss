@@ -1,0 +1,27 @@
+@import 'src/styles/themes/themes.scss';
+
+.rsButtonCell {
+    .rsButton {
+        &.custom {
+            height: 28px;
+            font-size: 16px;
+            border-radius: 24px;
+            padding: 4px 8px;
+            white-space: nowrap;
+            box-shadow: none;
+            background-color: theme-var($white);
+            color: theme-var($primaryPurpleColor);
+            border: 1px solid theme-var($primaryPurpleColor);
+
+            &.small {
+                height: 24px;
+                padding: 12px 8px;
+            }
+
+            &:hover {
+                background-color: theme-var($primaryPurpleColor);
+                color: theme-var($white);
+            }
+        }
+    }
+}

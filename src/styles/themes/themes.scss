@@ -1,0 +1,120 @@
+@import 'palettes';
+@import 'mixins';
+
+// Default theme used throughout
+$defaultTheme: (
+	//Orange
+	$primaryOrangeColor: #f47336,
+	//Purple
+	$primaryPurpleColor: #856eaf,
+	$bequickPurpleColor: #663399,
+	//Blue
+	$primaryBlueColor: #0065f2,
+	//Yellow
+	$primaryYellowColor: #ffb900,
+	$bequickYellowColor: #fdb72b,
+	// Success colors
+	$successLightColor: #9ce0a4,
+	$successBequickColor: #7ab321,
+	$successMainColor: #6cae75,
+	$successDarkColor: #3d7e49,
+	$successContrastText: #fff,
+	$successTextColor: #2e4831,
+	$successBackgroundColor: #f0f6f0,
+	// Info colors
+	$infoLightColor: #bbdefb,
+	$infoMainColor: #2196f3,
+	$infoDarkColor: #0b79d0,
+	$infoContrastText: #fff,
+	$infoTextColor: #0d3c61,
+	$infoBackgroundColor: #e8f4fd,
+	// Warning colors
+	$warningLightColor: #ffb74d,
+	$warningMainColor: #ff9800,
+	$warningDarkColor: #f57c00,
+	$warningContrastText: #fff,
+	$warningTextColor: #663c00,
+	$warningBackgroundColor: #fff5d9,
+	// Pending save
+	$pendingSaveColor: #ff3c3c,
+	// Error colors
+	$errorLightColor: #e57373,
+	$errorMainColor: #dd1100,
+	$errorDarkColor: #d32f2f,
+	$errorContrastText: #fff,
+	$errorTextColor: #f44336,
+	$errorBackgroundColor: #fadcd9,
+	// Text colors
+	$primaryTextColor: #2f3132,
+	$secondaryTextColor: #ffffff,
+	$grayTextColor: #878a8e,
+	$lightGrayTextColor: #cac8c8,
+	$lighterGrayTextColor: #ece8e8,
+	//Background
+	$primaryBackgroundColor: #ffffff,
+	$primaryContrastBackgroundColor: #f0f0f0,
+	$mediumGrayBackgroundColor: #f0f0f0,
+	//Action
+	$active: rgba(0, 0, 0, 0.54),
+	$hover: rgba(0, 0, 0, 0.04),
+	$selected: rgba(0, 0, 0, 0.08),
+	$disabled: rgba(0, 0, 0, 0.26),
+	$disabledBackground: rgba(0, 0, 0, 0.12),
+	$focus: rgba(0, 0, 0, 0.12),
+	//Misc
+	//-Common
+	$black: #000000,
+	$white: #ffffff,
+	$gray: #8a8a8a,
+	$lightGray: #cecece,
+	//-Link
+	$linkBlue: #0066ec,
+	//-Box Shadow
+	$boxShadow: (0 1px 3px 0px rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14)),
+	//-Divider
+	$diverColor: rgba(0, 0, 0, 0.12),
+	//-Toolip
+	$tooltipMargin: 8px,
+	$tooltipPointerSize: 8px,
+	//-Other
+	$backdrop: rgba(0, 0, 0, 0.5),
+	$filledInput: rgba(0, 0, 0, 0.09),
+	$snackBar: #323232,
+	// Shape
+	$borderRadiusPaper: 24px,
+	// Z-index
+	$mobileStepperZIndex: 1000,
+	$appBarZIndex: 1100,
+	$drawerZIndex: 1200,
+	$modalZIndex: 1300,
+	$toastZIndex: 1400,
+	$tooltipZIndex: 1500,
+	// Width
+	$pageWidth: 1440px,
+	// Height
+	$footerHeight: 490px,
+	$footerMediumHeight: 853px,
+	//Calendar
+	$primaryCalendarColor: rgb(34, 34, 34),
+	$secondaryCalendarColor: rgb(247, 247, 247),
+	//Images
+	$updaterLogoCdnUrl: url('https://ik.imagekit.io/troomi/MDM%2BUdater%2BOrange.png'),
+	$footerSwooshCdnUrl: url('https://ik.imagekit.io/troomi/ParentPortal/footer-curve_XMjyk_3g5o.svg'),
+	$caretDownCdnUrl: url('https://ik.imagekit.io/troomi/ParentPortal/caret-down_NR2GmKFOnp.svg'),
+	$deviceImageCdnUrl: url('https://ik.imagekit.io/troomi/ParentPortal/device_nxFQ2KZ1qT.png')
+);
+
+/*
+// NOTE: Inside of App.scss place the following:
+
+// Spread default theme into App class
+.App {
+	@include spread-map($defaultTheme);
+}
+
+// If you have multiple themes plce the following:
+// Overrides
+.App.theme-green {
+	@include spread-map($greenTheme);
+}
+*/

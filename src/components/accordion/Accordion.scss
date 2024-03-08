@@ -1,0 +1,78 @@
+@import 'src/styles/themes/themes';
+
+.rsAccordion {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+
+	&.opened {
+		.rsAccordionHeader .rsIcon {
+			rotate: 180deg;
+		}
+	}
+
+	.rsAccordionHeader {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 8px;
+		min-height: 50px;
+		box-sizing: border-box;
+		width: 100%;
+
+		&:hover {
+			cursor: pointer;
+			transition: filter 300ms;
+
+			&.withHoverEffect {
+				filter: brightness(1.2);
+			}
+		}
+
+		& > .ripple {
+			position: absolute;
+			background: rgba(255, 255, 255, 0.3);
+			transform: translate(-50%, -50%);
+			pointer-events: none;
+			border-radius: 50%;
+			animation: ripples 0.6s linear;
+		}
+
+		.rsLabel {
+			color: theme-var($primaryTextColor);
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		.rsIcon {
+			margin-left: auto;
+			transition: rotate 0.4s;
+		}
+
+		.labelWrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		@keyframes ripples {
+			0% {
+				width: 0px;
+				height: 0px;
+				opacity: 0.5;
+			}
+
+			100% {
+				width: 500px;
+				height: 500px;
+				opacity: 0;
+			}
+		}
+	}
+
+	.rsAccordionChildren {
+		transition: height 0.2s ease-out;
+		overflow: hidden;
+		height: 0;
+	}
+}

@@ -1,0 +1,61 @@
+.rsTableHeader {
+	text-transform: capitalize;
+
+	flex-wrap: nowrap;
+
+	white-space: nowrap;
+
+	font-weight: 700;
+
+	vertical-align: middle;
+
+	min-height: 50px;
+
+	padding-top: 10px;
+
+	.cellHeader {
+		cursor: pointer;
+
+		&.visible .arrowIcon {
+			visibility: visible;
+		}
+
+		.directionArrowContainer {
+			display: flex;
+
+			flex-direction: row;
+
+			padding-right: 40px;
+
+			align-items: center;
+
+			&:hover .arrowIcon {
+				visibility: visible;
+
+				opacity: 1;
+
+				transition: opacity 500ms;
+			}
+
+			.arrowIcon {
+				margin-left: 16px;
+
+				visibility: hidden;
+
+				opacity: 0;
+
+				transition: opacity 500ms;
+
+				&.visible {
+					visibility: visible;
+				}
+			}
+
+			&.visible .arrowIcon {
+				visibility: visible;
+
+				opacity: 1;
+			}
+		}
+	}
+}

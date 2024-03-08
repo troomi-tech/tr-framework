@@ -1,0 +1,62 @@
+@import '../../styles/themes/variables.scss';
+
+.has-tabs > .rs-view {
+	.rs-page {
+		padding-bottom: $tabsHeight;
+	}
+}
+
+.rs-page {
+	z-index: 20;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background: white;
+	transition: transform 0.35s ease;
+	//transform: translate3d(100%, 0, 0);
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	box-sizing: border-box;
+
+	&.has-nav-bar {
+		padding-top: $navBarHeight;
+
+		.page-opacity-effect {
+			margin-top: $navBarHeight;
+		}
+	}
+
+	&.page-to-remove {
+		z-index: 30;
+		transform: translate3d(100%, 0, 0);
+	}
+
+	&.page-current {
+		z-index: 20;
+		transform: unset;
+
+		.page-opacity-effect {
+			opacity: 0 !important;
+		}
+	}
+
+	&.page-previous {
+		z-index: 10;
+		transform: translate3d(-20%, 0, 0);
+	}
+
+	.page-opacity-effect {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		content: '';
+		opacity: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.1);
+		width: 100%;
+		z-index: 21;
+		transition: opacity 0.35s ease;
+	}
+}

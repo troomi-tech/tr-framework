@@ -1,0 +1,36 @@
+@import 'src/styles/themes/variables.scss';
+
+.rs-view {
+	height: 100vh;
+	position: relative;
+	display: none;
+	overflow: hidden;
+
+	.nav-parent {
+		width: 100%;
+		transition: height 0.35s ease;
+		position: absolute;
+		top: 0;
+		overflow: hidden;
+		height: $navBarHeight;
+		z-index: 40;
+		background: #ffffffdd;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+
+	&.active-view {
+		padding: 0px 18px;
+		display: block;
+	}
+}
+
+.desktop .rs-view {
+	&.active-view {
+		padding: 0px;
+	}
+}
+
+html {
+	height: 100vh;
+}

@@ -1,0 +1,84 @@
+@import 'src/styles/themes/themes.scss';
+
+.rsButton {
+    --_buttonSecondaryColor: unset;
+    --_buttonMainColor: unset;
+
+    &.primary,
+    &.secondary {
+        height: 48px;
+        font-size: 25px;
+        font-weight: $fwBold;
+        border-radius: 24px;
+        padding: 7px 48px;
+        white-space: nowrap;
+        box-shadow: none;
+
+        &.small {
+            height: 34px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &.tertiary {
+        height: 40px;
+        font-size: 16px;
+        line-height: 34px;
+        border-radius: 20px;
+        padding: 12px 16px;
+        white-space: nowrap;
+        box-shadow: none;
+
+        &.small {
+            height: 28px;
+            font-size: 12px;
+        }
+    }
+
+    &.primary {
+        --_buttonMainColor: #{theme-var($primaryPurpleColor)};
+        --_buttonSecondaryColor: #{theme-var($white)};
+    }
+
+    &.secondary {
+        --_buttonMainColor: #{theme-var($primaryOrangeColor)};
+        --_buttonSecondaryColor: #{theme-var($white)};
+    }
+
+    &.tertiary {
+        --_buttonMainColor: #{theme-var($primaryContrastBackgroundColor)};
+        --_buttonSecondaryColor: #{theme-var($primaryTextColor)};
+    }
+
+    &.contained {
+        background-color: var(--_buttonMainColor);
+        color: var(--_buttonSecondaryColor);
+    }
+
+    &.text {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        background-color: var(--_buttonSecondaryColor);
+        color: var(--_buttonMainColor);
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 16px;
+        height: 32px;
+
+        &:has(.ripple) {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        }
+    }
+
+    &.outlined {
+        background-color: var(--_buttonSecondaryColor);
+        color: var(--_buttonMainColor);
+        border: 1px solid var(--_buttonMainColor);
+    }
+
+    &.none, &.custom {
+        background: none;
+        border-radius: 0;
+        padding: 0;
+    }
+}

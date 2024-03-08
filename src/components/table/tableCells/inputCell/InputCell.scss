@@ -1,0 +1,28 @@
+@import 'src/styles/themes/themes.scss';
+
+.rsInputCell {
+    .rsTextInput {
+        &.custom {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+            color: #333;
+            background-color: #fff;
+            transition: all 300ms;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            box-shadow: none;
+            font-family: 'Nunito', sans-serif;
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+
+            &:focus {
+                border-color: #aaa;
+            }
+        }
+    }
+}

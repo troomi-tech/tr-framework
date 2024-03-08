@@ -1,0 +1,13 @@
+.rsBaseCell {
+    cursor: default;
+    background-color: inherit;
+
+    &.clickable {
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}

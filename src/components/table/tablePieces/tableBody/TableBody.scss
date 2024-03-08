@@ -1,0 +1,20 @@
+$rowBorder: #e0e0e0;
+
+.rsTableBody {
+	background-color: inherit;
+
+	tr {
+		border-top: 1px solid $rowBorder;
+		vertical-align: middle;
+	}
+
+	tr:last-child {
+		border-bottom: 1px solid $rowBorder;
+	}
+
+	&.filterShown {
+		tr:first-child:hover {
+			background: transparent;
+		}
+	}
+}

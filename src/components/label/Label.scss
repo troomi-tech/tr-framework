@@ -1,0 +1,16 @@
+@import 'src/styles/themes/themes';
+
+.rsLabel {
+	color: theme-var($primaryTextColor);
+	font-family: 'Nunito', sans-serif;
+
+	.rsLabelShowMoreButton {
+		margin-top: 5px;
+		width: fit-content;
+		width: -moz-fit-content;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

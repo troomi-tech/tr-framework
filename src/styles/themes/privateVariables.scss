@@ -1,0 +1,127 @@
+/* Font Weights */
+$fwThin: 100;
+$fwExtraThin: 200;
+$fwLight: 300;
+$fwRegular: 400;
+$fwMedium: 500;
+$fwSemiBold: 600;
+$fwBold: 700;
+$fwExtraBold: 800;
+$fwBlack: 900;
+$fwExtraBlack: 950;
+
+/* Global's used in calculations (page offsets, etc) */
+$menuExpandedWidth: 250px;
+$menuCollapsedWidth: 50px;
+
+// Map SCSS theme variables to CSS variables
+
+//Orange
+$primaryOrangeColor: --primaryOrangeColor;
+//Purple
+$primaryPurpleColor: --primaryPurpleColor;
+$bequickPurpleColor: --bequickPurpleColor;
+//Blue
+$primaryBlueColor: --primaryBlueColor;
+//Yellow
+$primaryYellowColor: --primaryYellowColor;
+$bequickYellowColor: --bequickYellowColor;
+
+//Success
+$successLightColor: --successLightColor;
+$successBequickColor: --successBequickColor;
+$successMainColor: --successMainColor;
+$successDarkColor: --successDarkColor;
+$successContrastText: --successContrastText;
+$successTextColor: --successTextColor;
+$successBackgroundColor: --successBackgroundColor;
+
+//Info
+$infoLightColor: --infoLightColor;
+$infoMainColor: --infoMainColor;
+$infoDarkColor: --infoDarkColor;
+$infoContrastText: --infoContrastText;
+$infoTextColor: --infoTextColor;
+$infoBackgroundColor: --infoBackgroundColor;
+
+//Warning
+$warningLightColor: --warningLightColor;
+$warningMainColor: --warningMainColor;
+$warningDarkColor: --warningDarkColor;
+$warningContrastText: --warningContrastText;
+$warningTextColor: --warningTextColor;
+$warningBackgroundColor: --warningBackgroundColor;
+
+//Pending Save
+$pendingSaveColor: --pendingSaveColor;
+
+//Error
+$errorLightColor: --errorLightColor;
+$errorMainColor: --errorMainColor;
+$errorDarkColor: --errorDarkColor;
+$errorContrastText: --errorContrastText;
+$errorTextColor: --errorTextColor;
+$errorBackgroundColor: --errorBackgroundColor;
+
+//Text
+$primaryTextColor: --primaryTextColor;
+$secondaryTextColor: --secondaryTextColor;
+$grayTextColor: --grayTextColor;
+$lightGrayTextColor: --lightGrayTextColor;
+$lighterGrayTextColor: --lighterGrayTextColor;
+
+//Background
+$primaryBackgroundColor: --primaryBackgroundColor;
+$primaryContrastBackgroundColor: --primaryContrastBackgroundColor;
+$mediumGrayBackgroundColor: --mediumGrayBackgroundColor;
+
+//Action
+$active: --active;
+$hover: --hover;
+$selected: --selected;
+$disabled: --disabled;
+$disabledBackground: --disabledBackground;
+$focus: --focus;
+
+//Misc
+//-Common
+$black: --black;
+$white: --white;
+$gray: --gray;
+$lightGray: --lightGray;
+// Link
+$linkBlue: --linkBlue;
+//-Box Shadow
+$boxShadow: --boxShadow;
+//-Divider
+$diverColor: --diverColor;
+//-Tooltip
+$tooltipMargin: --tooltipMargin;
+$tooltipPointerSize: --tooltipPointerSize;
+//-Other
+$backdrop: --backdrop;
+$filledInput: --filledInput;
+$snackBar: --snackBar;
+$borderRadiusPaper: --borderRadiusPaper;
+$appBar: --appBar;
+$drawer: --drawer;
+//Z-Index
+$mobileStepperZIndex: --mobileStepperZIndex;
+$appBarZIndex: --appBarZIndex;
+$tooltipZIndex: --tooltipZIndex;
+$drawerZIndex: --drawerZIndex;
+$modalZIndex: --modalZIndex;
+$toastZIndex: --toastZIndex;
+// Width
+$pageWidth: --pageWidth;
+// Height
+$footerHeight: --footerHeight;
+$footerMediumHeight: --footerMediumHeight;
+//Calendar
+$primaryCalendarColor: --primaryCalendarColor;
+$secondaryCalendarColor: --secondaryCalendarColor;
+//Images
+$updaterLogoCdnUrl: --updaterLogoCdnUrl;
+$footerSwooshCdnUrl: --footerSwooshCdnUrl;
+$caretDownCdnUrl: --caretDownCdnUrl;
+$deviceImageCdnUrl: --deviceImageCdnUrl;

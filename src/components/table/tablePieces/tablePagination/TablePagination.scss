@@ -1,0 +1,113 @@
+@import 'src/styles/themes/themes';
+
+.rsTablePagination {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 10px;
+	font-weight: 400;
+	vertical-align: middle;
+
+	.rowsPerPage {
+		margin-right: 32px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.rowsPerPageLabel {
+			padding-right: 4px;
+			color: black;
+		}
+
+		.rsPerPageDropdown {
+			width: 100px;
+		}
+	}
+
+	.index {
+		margin-right: 40px;
+	}
+
+	.pageNavigationContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 4px;
+		align-items: center;
+
+		.pageNumberSelector {
+			// Can't use nuito sans serif font because numbers will not properly center
+			font-family: monospace;
+			color: theme-var($primaryTextColor);
+			outline: 4px solid transparent;
+			background-color: transparent;
+			justify-content: center;
+			transition: all 200ms;
+			outline-offset: -2px;
+			flex-direction: row;
+			align-items: center;
+			border-radius: 12px;
+			text-align: center;
+			padding: 12px 8px;
+			user-select: none;
+			line-height: 8px;
+			cursor: pointer;
+			min-width: 24px;
+			font-size: 16px;
+			display: flex;
+			height: 18px;
+
+			&.ellipsis {
+				cursor: default;
+				pointer-events: none;
+				font-family: 'Nunito Sans', sans-serif;
+				width: 24px;
+			}
+
+			&.selected {
+				outline: 4px solid theme-var($primaryOrangeColor);
+				color: theme-var($primaryOrangeColor);
+				background-color: theme-var($white);
+			}
+
+			&:hover,
+			&:focus-visible {
+				background-color: theme-var($primaryOrangeColor);
+				color: theme-var($white);
+			}
+		}
+
+		.chevronSelect {
+			padding: 4px;
+			border-radius: 16px;
+			background-color: transparent;
+			color: theme-var($primaryTextColor);
+			transition: all 200ms;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			&.right {
+				padding-left: 6px;
+			}
+
+			&.left {
+				padding-right: 6px;
+			}
+
+			&.disabled {
+				pointer-events: none;
+				cursor: default;
+				opacity: 0.5;
+			}
+
+			&:hover,
+			&:focus-visible {
+				background-color: theme-var($primaryOrangeColor);
+				color: theme-var($white);
+			}
+		}
+	}
+}

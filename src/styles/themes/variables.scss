@@ -1,0 +1,44 @@
+/* App color scheme */
+$red: #d20c0c;
+$dimgray: #424242;
+$dimgrey: $dimgray;
+$gray: #737373;
+$grey: $gray;
+$lightgray: #aaaaaa;
+$lightgrey: $lightgray;
+$silver: #dddddd;
+$white: #ffffff;
+$green: #00b451;
+$blue: #0066ec;
+
+/* RS Label Component Includes */
+
+/* Global */
+$mowersRed: #d30404;
+$buttonGray: #404040;
+$primary-background-color: $red;
+$primary-color: $white;
+$secondary-background-color: $lightgray;
+$secondary-color: rgb(64, 64, 64);
+$tertiary-background-color: $gray;
+$tertiary-color: rgb(229, 229, 229);
+$control-box-shadow: 0px 1px 2px 1px #323232;
+$content-width: 250px;
+$mainWhiteBackground: #f6f6f6;
+$tabBarGray: #dedede;
+$bottomTabBarIconColor: #404040;
+$textGray: $dimgray;
+$borderGray: #7c7c7c;
+$lightGray: $lightgray;
+$speed: 2.5s;
+
+/*Frame work*/
+$spacingXS: 2px;
+$spacingSmall: 4px;
+$spacingMedium: 8px;
+$spacingLarge: 16px;
+$spacingXL: 24px;
+$spacingXXL: 32px;
+$spacingXXXL: 50px;
+$navBarHeight: calc(#{$spacingXXXL} + env(safe-area-inset-top));
+$tabsHeight: calc(#{$spacingXXXL} + env(safe-area-inset-bottom));

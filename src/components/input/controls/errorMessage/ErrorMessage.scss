@@ -1,0 +1,8 @@
+@import 'src/styles/themes/themes';
+
+.rsErrorMessage {
+    font-family: 'Nunito', sans-serif;
+    color: theme-var($errorTextColor);
+    text-align: left;
+    font-size: 16px;
+}

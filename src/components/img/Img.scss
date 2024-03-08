@@ -1,0 +1,7 @@
+.rsImg {
+	// Hides alt tags when image is not visible due to lazy loading
+	// See: https://stackoverflow.com/questions/36993874/is-there-a-way-to-hide-alt-tags-for-unloaded-lazyload-images
+	&:not([src]) {
+		visibility: hidden;
+	}
+}

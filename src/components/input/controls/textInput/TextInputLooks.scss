@@ -1,0 +1,30 @@
+@import 'src/styles/themes/themes';
+
+.rsTextInput {
+    &.box {
+        border: 2px solid theme-var($lightGray);
+        padding: 10px 14px;
+
+        &:focus {
+            border-color: theme-var($primaryPurpleColor);
+        }
+    }
+
+    &.underline {
+        border: none;
+        box-sizing: content-box;
+        border-bottom: 2px solid theme-var($lightGray);
+        padding: 6px 0px 6px;
+
+        &:focus {
+            border-bottom-color: #90caf9 // TODO: Move this into a theme-var
+        }
+
+        &:focus,
+        &:hover {
+            padding-bottom: 5px;
+            border-bottom-width: 3px;
+        }
+    }
+
+}

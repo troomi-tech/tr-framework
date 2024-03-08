@@ -1,0 +1,6 @@
+{
+	"scripts": {
+		"start": "yarn build",
+		"build": "tsc ./build/buildTypes.ts --outDir ./build && node ./build/buildTypes.js"
+	}
+}
