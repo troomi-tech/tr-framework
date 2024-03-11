@@ -25,7 +25,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/troomi-tech/tr-framework/tree/master"
+		"url": "git+https://github.com/troomi-tech/tr-framework.git#master"
 	},
 	"author": "Troomi Wireless",
 	"license": "UNLICENSED",
